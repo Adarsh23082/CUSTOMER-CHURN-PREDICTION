@@ -57,4 +57,4 @@ This project demonstrates the importance of EDA and the use of multiple machine 
 
 ## Kaggle Notebook
 
-You can find the detailed analysis and code on my Kaggle notebook: [Link to Kaggle Notebook]((https://www.kaggle.com/code/adarshrajmaurya/eda-classifier-models-for-customer-churn))
+You can find the detailed analysis and code on my Kaggle notebook: [Link to Kaggle Notebook](https://www.kaggle.com/code/adarshrajmaurya/eda-classifier-models-for-customer-churn)
