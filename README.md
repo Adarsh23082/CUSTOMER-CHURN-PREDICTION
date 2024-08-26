@@ -16,7 +16,7 @@ The dataset used in this project is the **Telco Customer Churn** dataset from IB
 
 You can find the dataset and additional details at the following link:
 
-[IBM Telco Customer Churn Dataset](https://www.ibm.com/communities/analytics/watson-analytics-blog/guide-to-sample-datasets/#telco-customer-churn-dataset)
+[IBM Telco Customer Churn Dataset](https://community.ibm.com/community/user/businessanalytics/blogs/steven-macko/2019/07/11/telco-customer-churn-1113)
 
 ## Methodology
 
@@ -57,4 +57,4 @@ This project demonstrates the importance of EDA and the use of multiple machine 
 
 ## Kaggle Notebook
 
-You can find the detailed analysis and code on my Kaggle notebook: [Link to Kaggle Notebook]([your-kaggle-notebook-link](https://www.kaggle.com/code/adarshrajmaurya/eda-classifier-models-for-customer-churn))
+You can find the detailed analysis and code on my Kaggle notebook: [Link to Kaggle Notebook]((https://www.kaggle.com/code/adarshrajmaurya/eda-classifier-models-for-customer-churn))
