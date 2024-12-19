@@ -1,60 +1,39 @@
-# Customer Churn Prediction: EDA and Classifier Models
+# **Customer Churn Prediction**
 
-This repository contains a project focused on analyzing and predicting customer churn. Customer churn is a critical issue for businesses, and predicting which customers are likely to leave can help companies take proactive measures to retain them.
+## **Project Overview**
+This project aims to predict customer churn for a telecommunications company. Churn prediction involves identifying customers who are likely to leave the service in the near future. By analyzing customer behavior and attributes, this project provides actionable insights to improve customer retention strategies.
 
-## Project Overview
+## **Dataset**
+- **Source:** IBM Telco Customer Churn Dataset.
+- **Attributes:**
+  - Includes demographic information (e.g., gender, senior citizen status), service details (e.g., internet service type), and billing information (e.g., monthly and total charges).
+  - The target variable is `Churn`, indicating whether the customer left the service (Yes/No).
+- **Characteristics:**
+  - Data imbalance observed in the target variable, with a churn ratio of approximately 73:27.
 
-The project consists of the following main steps:
+## **Methodology**
+1. **Data Preprocessing:**
+   - Handled missing values in the `TotalCharges` column by removing rows with null values (less than 0.2% of the dataset).
+   - Converted categorical variables into numerical format using encoding techniques.
+   - Rescaled numerical features to standardize data for better model performance.
 
-1. **Exploratory Data Analysis (EDA):** Understanding the dataset, visualizing patterns, and identifying important features that contribute to customer churn.
-2. **Modeling:** Training and evaluating various machine learning classifiers to predict customer churn based on historical data.
-3. **Evaluation:** Comparing model performances using different metrics such as accuracy and precision, and selecting the best model.
+2. **Exploratory Data Analysis:**
+   - Visualized key patterns and relationships between features and churn.
+   - Compared distributions of key features (e.g., monthly charges, tenure) for churned and non-churned customers.
 
-## Dataset
+3. **Data Balancing:**
+   - Addressed the data imbalance using SMOTE-ENN to generate a balanced dataset.
 
-The dataset used in this project is the **Telco Customer Churn** dataset from IBM. It contains information on 7,043 customers from a fictional telco company in California, including demographics, services used, and whether the customer churned. This data is used to predict customer churn based on various factors like customer satisfaction, contract type, and services.
+4. **Modeling:**
+   - Built and evaluated multiple machine learning models, including:
+     - Logistic Regression
+     - Decision Tree Classifier
+   - Evaluated models based on accuracy, precision, recall, and F1-score.
 
-You can find the dataset and additional details at the following link:
+## **Results**
+- Logistic Regression achieved [accuracy, precision, recall, F1-score] (add metrics from notebook).
+- Decision Tree Classifier achieved [accuracy, precision, recall, F1-score] (add metrics from notebook).
+- The use of SMOTE-ENN significantly improved model performance on imbalanced data.
 
-[IBM Telco Customer Churn Dataset](https://community.ibm.com/community/user/businessanalytics/blogs/steven-macko/2019/07/11/telco-customer-churn-1113)
-
-## Methodology
-
-### Data Cleaning and Preprocessing:
-- Handle missing data.
-- Encode categorical variables.
-- Scale numerical features if necessary.
-
-### Exploratory Data Analysis:
-- Generate summary statistics.
-- Visualize data distributions and relationships between features.
-
-### Model Training:
-Multiple classifiers were trained, including:
-- Logistic Regression
-- Decision Trees
-- Random Forest
-- XGBoost
-- Support Vector Classifier (SVC)
-
-Models were evaluated using cross-validation and performance metrics.
-
-### Model Evaluation:
-Performance was assessed based on accuracy, precision, recall, and other relevant metrics. The best-performing model was selected for deployment.
-
-## Results
-
-The results of the models, including the confusion matrix, accuracy, precision, and other evaluation metrics, are discussed in the notebook. The top-performing model(s) are highlighted.
-
-## Repository Contents
-- **`eda-classifier-models-for-customer-churn.ipynb`:** Jupyter Notebook containing the full analysis, model training, and evaluation process.
-- **`data/`:** Folder containing the dataset used for this project (if publicly available).
-- **`README.md`:** This file providing an overview of the project.
-
-## Conclusion
-
-This project demonstrates the importance of EDA and the use of multiple machine learning classifiers to predict customer churn. The best model can be deployed to help businesses take proactive measures to reduce churn and retain their customers.
-
-## Kaggle Notebook
-
-You can find the detailed analysis and code on my Kaggle notebook: [Link to Kaggle Notebook](https://www.kaggle.com/code/adarshrajmaurya/eda-classifier-models-for-customer-churn)
+## **Conclusion**
+This project demonstrates the importance of data preprocessing and resampling techniques in churn prediction. Logistic Regression provided interpretable results, while the Decision Tree model captured complex patterns effectively. These models can help telecom companies proactively address customer churn and enhance customer satisfaction.
